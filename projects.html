@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reem Safadi — Selected Works</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Material Symbols -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Site Stylesheet -->
+  <link rel="stylesheet" href="CSS/projects.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       TOP NAVIGATION
+       ============================================= -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html"><span class="nav__brand">Reem Safadi</span></a>
+
+      <!-- Desktop links -->
+      <ul class="nav__links">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="about.html">About</a></li>
+        <li><a class="nav__link nav__link--active" href="projects.html">Projects</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+        <li>
+          <a href="Reemalsafadi.pdf"><button class="nav__resume-btn">Resume</button></a>
+        </li>
+      </ul>
+
+      <!-- Mobile toggle -->
+      <button class="nav__mobile-toggle" aria-label="Open navigation menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- =============================================
+       MAIN CONTENT
+       ============================================= -->
+  <main class="main">
+    <div class="container">
+
+      <!-- Page Header -->
+      <section class="page-header">
+        <h1 class="page-header__title">Selected Works</h1>
+        <p class="page-header__subtitle">
+          A curated collection of digital experiences, bridging the gap between
+          aesthetics and functionality through clean code and user-centric design.
+        </p>
+      </section>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar" role="group" aria-label="Filter projects by category">
+        <button class="filter-btn filter-btn--active" data-filter="all">All Projects</button>
+        <button class="filter-btn filter-btn--inactive" data-filter="frontend">Frontend</button>
+        <button class="filter-btn filter-btn--inactive" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn filter-btn--inactive" data-filter="uidesign">UI Design</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1: Full Stack -->
+        <article class="project-card" data-category="fullstack">
+          <div class="project-card__image-wrap">
+            <img
+              class="project-card__image"
+              src="assets/Evalora/page 1 evalora.png"
+              alt="Artisan Commerce dashboard on laptop"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <h3 class="project-card__title">Evalora</h3>
+            <p class="project-card__desc">
+              A modern and user-centered evaluation platform designed to streamline feedback collection, performance tracking, and data-driven insights through a clean and intuitive interface.
+            </p>
+            <div class="project-card__actions">
+              <button class="card-btn card-btn--primary">
+                <span class="material-symbols-outlined">open_in_new</span> Live Demo
+              </button>
+              <button class="card-btn card-btn--outline">
+                <span class="material-symbols-outlined">code</span> GitHub
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Frontend -->
+        <article class="project-card" data-category="frontend">
+          <div class="project-card__image-wrap">
+            <img
+              class="project-card__image"
+              src="assets/Spark/Spark1.png"
+              alt="Kinetic Portfolio interface close-up"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">HTMl</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              
+            </div>
+            <h3 class="project-card__title">Spark Events</h3>
+            <p class="project-card__desc">
+              Designed and developed a responsive event planning website focusing on clear navigation, modern UI, and improved user experience for browsing and managing events.
+            </p>
+            <div class="project-card__actions">
+              <button class="card-btn card-btn--primary">
+                <span class="material-symbols-outlined">open_in_new</span> Live Demo
+              </button>
+              <button class="card-btn card-btn--outline">
+                <span class="material-symbols-outlined">code</span> GitHub
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: UI Design -->
+        <article class="project-card" data-category="uidesign">
+          <div class="project-card__image-wrap">
+            <img
+              class="project-card__image"
+              src="assets/Wise/wise.jpeg"
+              alt="Lumina wellness app mobile mockups"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">Figma</span>
+              <span class="tag">UX Research</span>
+              <span class="tag">Prototyping</span>
+            </div>
+            <h3 class="project-card__title">University Student Services App</h3>
+            <p class="project-card__desc">
+              Designed a mobile app interface to facilitate access to university student services, focusing on improving usability, information clarity, and overall user experience for students.
+            </p>
+            <div class="project-card__actions">
+              <button class="card-btn card-btn--primary">
+                <span class="material-symbols-outlined">visibility</span> View Case
+              </button>
+              <button class="card-btn card-btn--outline">
+                <span class="material-symbols-outlined">palette</span> Design System
+              </button>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="project-card" data-category="uidesign">
+          <div class="project-card__image-wrap">
+            <img
+              class="project-card__image"
+              src="assets/Orange/orange.jpeg"
+              alt="Lumina wellness app mobile mockups"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">Figma</span>
+              <span class="tag">UX Research</span>
+              <span class="tag">Prototyping</span>
+            </div>
+            <h3 class="project-card__title">Booking Appointment App</h3>
+            <p class="project-card__desc">
+              Designed a mobile app interface to streamline the appointment booking process at Orange stores, focusing on improving user flow, reducing steps, and enhancing overall usability for customers.
+            </p>
+            <div class="project-card__actions">
+              <button class="card-btn card-btn--primary">
+                <span class="material-symbols-outlined">visibility</span> View Case
+              </button>
+              <button class="card-btn card-btn--outline">
+                <span class="material-symbols-outlined">palette</span> Design System
+              </button>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="project-card" data-category="uidesign">
+          <div class="project-card__image-wrap">
+            <img
+              class="project-card__image"
+              src="assets/RESA/resa1.png"
+              alt="Lumina wellness app mobile mockups"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">Figma</span>
+              <span class="tag">UX Research</span>
+              <span class="tag">Prototyping</span>
+            </div>
+            <h3 class="project-card__title">RESA Sunglasses App</h3>
+            <p class="project-card__desc">
+              Designed a mobile app prototype for a sunglasses brand, focusing on visual branding, smooth user flow, and an engaging shopping experience for browsing and purchasing products.
+            </p>
+            <div class="project-card__actions">
+              <button class="card-btn card-btn--primary">
+                <span class="material-symbols-outlined">visibility</span> View Case
+              </button>
+              <button class="card-btn card-btn--outline">
+                <span class="material-symbols-outlined">palette</span> Design System
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </div><!-- /container -->
+  </main>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer__branding">
+        <span class="footer__brand">Reem Safadi</span>
+        <p class="footer__copy">© 2026 Reem Safadi. All rights reserved.</p>
+      </div>
+      <ul class="footer__links">
+        <li><a class="footer__link" href="https://www.linkedin.com/in/reem-safadi/">LinkedIn</a></li>
+        <li><a class="footer__link" href="https://mail.google.com/mail/?view=cm&fs=1&to=safadireem01@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Site Script -->
+  <script src="JavaScripts/projects.js"></script>
+
+</body>
+</html>

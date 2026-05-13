@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reem Safadi — Contact</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Material Symbols -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Site Stylesheet -->
+  <link rel="stylesheet" href="CSS/contact.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       HEADER / NAV
+       ============================================= -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html"><span class="nav__brand">Reem Safadi</span></a>
+
+      <ul class="nav__links">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="about.html">About</a></li>
+        <li><a class="nav__link" href="projects.html">Projects</a></li>
+        <li><a class="nav__link nav__link--active" href="contact.html">Contact</a></li>
+      </ul>
+
+      <a href="Reemalsafadi.pdf"><button class="nav__resume-btn">Resume</button></a>
+
+      <button class="nav__mobile-toggle" aria-label="Open navigation">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- =============================================
+       MAIN
+       ============================================= -->
+  <main class="main">
+    <div class="container">
+
+      <!-- Hero Header -->
+      <section class="page-header">
+        <h1 class="page-header__title">Let's work together</h1>
+        <p class="page-header__subtitle">
+          I'm currently available for freelance opportunities and full-time collaborations.
+          If you have a project in mind, just drop me a message.
+        </p>
+      </section>
+
+      <!-- Content Grid -->
+      <div class="content-grid">
+
+        <!-- ── Contact Form Card ── -->
+        <div class="form-card">
+          <form class="contact-form" novalidate>
+
+            <div class="form-group">
+              <label class="form-label" for="name">Full Name</label>
+              <input
+                class="form-input"
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Reem Safadi"
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input
+                class="form-input"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="reem@example.com"
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea
+                class="form-textarea"
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell me about your project..."
+              ></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button class="submit-btn" type="submit">
+                <span>Send Message</span>
+                <span class="material-symbols-outlined submit-btn__icon">send</span>
+              </button>
+            </div>
+
+            <!-- Success banner (shown after submission) -->
+            <div class="form-success" role="alert" aria-live="polite">
+              <span class="material-symbols-outlined">check_circle</span>
+              Message sent! I'll get back to you soon.
+            </div>
+
+          </form>
+        </div>
+
+        <!-- ── Sidebar ── -->
+        <aside class="sidebar">
+
+          <!-- Contact Details -->
+          <div class="contact-card">
+            <h3 class="contact-card__title">Contact Details</h3>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <span class="material-symbols-outlined">mail</span>
+              </div>
+              <div>
+                <span class="contact-item__label">Email</span>
+                <a class="contact-item__value" href="https://mail.google.com/mail/?view=cm&fs=1&to=safadireem01@gmail.com">
+                  Safadireem01@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <span class="material-symbols-outlined">share</span>
+              </div>
+              <div>
+                <span class="contact-item__label">Socials</span>
+                <ul class="social-list">
+                  <li><a class="contact-item__value" href="https://www.linkedin.com/in/reem-safadi/">LinkedIn</a></li>
+                
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Accent Card -->
+          <div class="accent-card">
+            <img
+              class="accent-card__img"
+              src="assets/wall.jpg"
+              alt="Minimalist home office with warm natural light"
+            />
+            <div class="accent-card__overlay">
+              <p class="accent-card__text">Let's create something meaningful.</p>
+            </div>
+          </div>
+
+        </aside>
+      </div><!-- /content-grid -->
+    </div><!-- /container -->
+  </main>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer__brand">Reem Safadi</span>
+
+      <ul class="footer__links">
+        <li><a class="footer__link" href="https://www.linkedin.com/in/reem-safadi/">LinkedIn</a></li>
+        <li><a class="footer__link footer__link--active" href="https://mail.google.com/mail/?view=cm&fs=1&to=safadireem01@gmail.com">Contact</a></li>
+      </ul>
+
+      <p class="footer__copy">© 2026 Reem Safadi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Site Script -->
+  <script src="JavaScripts/contact.js"></script>
+
+</body>
+</html>

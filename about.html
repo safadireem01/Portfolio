@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | Reem Safadi</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="CSS/about.css"/>
+</head>
+<body>
+
+<!-- TopNavBar -->
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a href="index.html"><span class="nav-logo">Reem Safadi</span></a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link nav-link--active" href="about.html">About</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a href="Reemalsafadi.pdf"><button class="btn btn--primary">Resume</button></a>
+    </div>
+    <div class="nav-toggle" id="menuToggle">
+      <span class="material-symbols-outlined">menu</span>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link nav-link--active" href="about.html">About</a>
+    <a class="nav-link" href="projects.html">Projects</a>
+    <a class="nav-link" href="contact.html">Contact</a>
+    <a href="Reemalsafadi.pdf"><button class="btn btn--primary">Resume</button></a>
+  </div>
+</nav>
+
+<main class="main">
+
+  <!-- Hero Section -->
+  <section class="hero section-container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <h1 class="hero-heading">Crafting seamless digital experiences through code &amp; design.</h1>
+        <p class="hero-sub">
+          I am a Computer Science graduate with a relentless passion for building user-friendly, modern, and accessible web experiences. Currently, I am focused on mastering Full Stack Development using Laravel and Tailwind CSS to bridge the gap between aesthetics and performance.
+        </p>
+      </div>
+      <div class="hero-image-col">
+        <div class="hero-image-box soft-shadow">
+          <img class="hero-img" src="assets/reem2.jpeg"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bento Skills Grid -->
+  <section class="skills-section">
+    <div class="section-container">
+      <h2 class="section-title text-center">My Expertise</h2>
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div class="skill-card soft-shadow">
+          <div class="skill-card-header">
+            <span class="material-symbols-outlined skill-icon">code</span>
+            <h3 class="skill-card-title">Frontend</h3>
+          </div>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Tailwind</span>
+          </div>
+        </div>
+        <!-- UI/UX -->
+        <div class="skill-card soft-shadow">
+          <div class="skill-card-header">
+            <span class="material-symbols-outlined skill-icon">brush</span>
+            <h3 class="skill-card-title">UI/UX</h3>
+          </div>
+          <div class="tags">
+            <span class="tag">Figma</span>
+            <span class="tag">Wireframing</span>
+            <span class="tag">Prototyping</span>
+            <span class="tag">Design Systems</span>
+          </div>
+        </div>
+        <!-- Backend -->
+        <div class="skill-card soft-shadow">
+          <div class="skill-card-header">
+            <span class="material-symbols-outlined skill-icon">database</span>
+            <h3 class="skill-card-title">Backend</h3>
+          </div>
+          <div class="tags">
+            <span class="tag">Laravel</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="section-container timeline-section">
+    <div class="timeline-layout">
+      <div class="timeline-sidebar">
+        <h2 class="section-title sticky-title">The Learning Journey</h2>
+      </div>
+      <div class="timeline-items">
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot timeline-dot--active"></div>
+          <span class="timeline-date timeline-date--active">Present</span>
+          <h4 class="timeline-heading">Specializing in Full Stack Development</h4>
+          <p class="timeline-body">I am currently focusing on Full Stack Development, learning how to build modern web applications using Laravel and Tailwind CSS. I am also exploring API design and database fundamentals to improve my understanding of backend development and create more efficient, user-friendly applications.</p>
+        </div>
+        <!-- Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">2024 - 2025</span>
+          <h4 class="timeline-heading">UI/UX &amp; Frontend Integration</h4>
+          <p class="timeline-body">Deepened skills in Figma prototyping and translated complex designs into responsive code using advanced CSS and JavaScript frameworks.</p>
+        </div>
+        <!-- Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">2022 - 2026</span>
+          <h4 class="timeline-heading">B.Sc. in Computer Science</h4>
+          <p class="timeline-body">Graduated with a focus on Software Engineering, Algorithms, and Human-Computer Interaction, building a strong foundation in web development and modern software principles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section class="section-container tools-section">
+    <div class="tools-box soft-shadow">
+      <p class="tools-label">Powered By Professional Tools</p>
+      <div class="tools-grid" id="toolsGrid">
+        <div class="tool-item">
+          <span class="material-symbols-outlined tool-icon">terminal</span>
+          <span class="tool-name">VS Code</span>
+        </div>
+        <div class="tool-item">
+          <span class="material-symbols-outlined tool-icon">hub</span>
+          <span class="tool-name">GitHub</span>
+        </div>
+        <div class="tool-item">
+          <span class="material-symbols-outlined tool-icon">token</span>
+          <span class="tool-name">Figma</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-name">Reem Safadi</span>
+      <p class="footer-copy">© 2026 Reem Safadi. All rights reserved.</p>
+    </div>
+    <div class="footer-links">
+      <a class="footer-link" href="https://www.linkedin.com/in/reem-safadi/">LinkedIn</a>
+      <a class="footer-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=safadireem01@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="JavaScripts/about.js"></script>
+</body>
+</html>
