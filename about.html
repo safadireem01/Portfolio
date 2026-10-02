@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>About | Reem Safadi Portfolio</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-left">
+      <h1><b>Reem Safadi</b></h1>
+    </div>
+
+    <div class="nav-center" id="navMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <a href="https://www.linkedin.com/in/reem-safadi-325850334/" class="Linkedin-Button">
+        <img class="linkedin" src="assets/Logos/linkedin_logo.png" width="35px" height="35px" alt="LinkedIn">
+      </a>
+    </div>
+
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <hr>
+
+  <section class="about">
+    <h2>About me</h2>
+    <ul>
+      <li>UI/UX Designer and Frontend Developer with a background in Computer Science</li>
+      <li>I combine design and development skills to create intuitive, responsive, and user-friendly digital experiences
+      </li>
+      <li>Skilled in Figma, HTML, CSS, JavaScript, and modern design principles</li>
+      <li>Passionate about transforming ideas into real products and continuously improving my skills</li>
+    </ul>
+
+    <h2>My skills</h2>
+
+    <h4>Frontend</h4>
+    <div class="skills-category">
+      <div class="skill-item">
+        <img src="assets/Front-end/html.png" alt="HTML">
+        <span>HTML</span>
+      </div>
+      <div class="skill-item">
+        <img src="assets/Front-end/css.png" alt="CSS">
+        <span>CSS</span>
+      </div>
+      <div class="skill-item">
+        <img src="assets/Front-end/JS.png" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+    </div>
+
+    <h4>Design &amp; UX</h4>
+    <div class="skills-category">
+      <div class="skill-item">
+        <img src="assets/Design/figma.png" alt="Figma">
+        <span>Figma</span>
+      </div>
+      <div class="skill-item">
+        <img src="assets/Design/ux_research.png" alt="UX Research">
+        <span>UX Research</span>
+      </div>
+      <div class="skill-item">
+        <img src="assets/Design/wireframing.png" alt="Wireframing">
+        <span>Wireframing</span>
+      </div>
+      <div class="skill-item">
+        <img src="assets/Design/prototyping.png" alt="Prototyping">
+        <span>Prototyping</span>
+      </div>
+    </div>
+
+    <h4>Database</h4>
+    <div class="skills-category">
+      <div class="skill-item">
+        <img src="assets/Database/sql.png" alt="SQL" class="sql-icon">
+        <span>SQL</span>
+      </div>
+    </div>
+
+    <h2>Experience</h2>
+    <p><strong>UI/UX Intern &mdash; Orange Jordan</strong><br>
+    <p>&ndash; Designed wireframes & prototypes using Figma<br></p>
+    <p>&ndash; Conducted usability testing<br></p>
+    <p>&ndash; Collaborated with developers &amp; designers</p>
+
+    <br>
+    <p><strong>Front-end development Course &mdash; FreeCodeCamp</strong><br>
+    <p>&ndash; Learned HTML, CSS, and JavaScript through practical projects<br></p>
+    <p>&ndash; Built responsive and user-friendly web pages<br></p>
+    <p>&ndash; Applied UI/UX principles to improve usability and layout</p>
+
+    <br>
+    <p><strong>Frontend Developer &mdash; Event Planner Website</strong><br>
+    <p>&ndash; Designed and developed a responsive website using HTML, CSS, and JavaScript<br></p>
+    <p>&ndash; Translated UI designs into clean and functional frontend code<br></p>
+    <p>&ndash; Improved usability and navigation through intuitive interface design</p>
+
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <div class="phone"><i class="fa-solid fa-phone"></i> +962 79 520 0413</div>
+      </div>
+      <div class="footer-center">
+        <p>&copy; 2025 Reem Safadi. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <div class="email">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:safadireem01@gmail.com">safadireem01@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+  </script>
+</body>
+
+</html>
